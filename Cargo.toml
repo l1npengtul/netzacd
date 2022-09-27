@@ -1,0 +1,28 @@
+[package]
+name = "netzacd"
+version = "0.1.0"
+authors = ["l1npengtul <l1npengtul@protonmail.com>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+directories = "4.0"
+serde = "1.0"
+quick-xml = "0.25"
+steamlocate = "1.0"
+iced_native = "0.5"
+iced_futures = "0.4"
+dark-light = "0.2"
+
+[dependencies.iced]
+version = "0.4"
+features = ["tokio"]
+
+[dependencies.language-tags]
+version = "0.3"
+features = ["serde"]
+
+[dependencies.wrapped_mono]
+tag = "0.1-rc"
+git = "https://github.com/FractalFir/wrapped_mono.git"
